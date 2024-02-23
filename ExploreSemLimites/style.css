@@ -1,0 +1,253 @@
+/* ESTILOS GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    font-size: 62.5%; 
+
+    font-family: "Mulish", sans-serif;
+}
+
+:root{
+    --purple-font: #B52184;
+    --DarkPurple-font: #312D64;
+}
+
+/* HEADER */
+.header-page{
+    display: flex;
+    gap: 2.8rem;
+    justify-content: center;
+}
+
+header .header-page .text-header{
+    margin: 31.2rem 0 0;
+}
+
+header .header-page .text-header h1{
+    font-size: 5.8rem;
+    font-weight: 900;
+    color: var(--purple-font);
+}
+
+header .header-page .text-header p{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--DarkPurple-font);
+
+    margin-top: 0.8rem;
+}
+
+.astronaut{
+    width: 72rem;
+    height: 72.3rem;
+}
+
+.arrow-bottom{
+    width: 5.8rem;
+    height: 10.5rem;
+    margin: 17.9rem 0 13.6rem 0;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow-bottom:hover{
+    transform: scale(1.05);
+}
+
+/* MAIN */
+main{
+    height: 57.6rem;
+    background: var(--DarkPurple-font);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+main .white-box{
+    width: 36.6rem;
+    height: 44.8rem;
+
+    border-radius: 2.4rem;
+
+    background: #fff;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+main .white-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 4px 4px #fff;
+}
+
+.little-planet{
+    width: 9.7rem;
+    height: 9.7rem;
+
+    margin: 3.2rem 0 0 3.2rem;
+}
+
+main .white-box h2{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--purple-font);
+
+    margin: 4rem 2.4rem 0;
+}
+
+main .white-box p{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--DarkPurple-font);
+
+    width: 32.1rem;
+
+    margin: 2.4rem 2.4rem;
+}
+
+/* SECTION */
+section{
+    height: 61.2rem;
+
+    margin-left: 12.6rem;
+
+    display: flex;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 9.5rem;
+
+    gap: 2.4rem;
+}
+
+section .form h1{
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: var(--purple-font);
+}
+
+section .form input{
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-left: 3.5rem;
+
+    width: 59.2rem;
+    height: 4.8rem;
+
+    border: 2px solid var(--DarkPurple-font);
+
+    border-radius: 1.6rem;
+
+    outline: none;
+    transition: .3s;
+}
+
+section .form input:hover{
+    border: 2px solid var(--purple-font);
+    transform: scale(1.05);
+}
+
+section .form input::placeholder{
+    color: var(--DarkPurple-font);
+}
+
+section .form textarea{
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-left: 1.5rem;
+
+    color: #312D64;
+
+    width: 59.2rem;
+    height: 12.6rem;
+
+    border: 2px solid var(--DarkPurple-font);
+
+    border-radius: 1.6rem;
+
+    padding-top: 1.2rem;
+
+    resize: none;
+
+    outline: none;
+    transition: .3s;
+}
+
+section .form textarea:hover{
+    border: 2px solid var(--purple-font);
+    transform: scale(1.05);
+}
+
+section .form textarea::placeholder{
+    color: var(--DarkPurple-font);
+}
+
+.input-name{
+    background-image: url(./img/person-icon.png);
+    background-repeat: no-repeat;
+    background-position: 1.4% 50%;
+}
+
+.input-email{
+    background-image: url(./img/at-icon.png);
+    background-repeat: no-repeat;
+    background-position: 1.4% 50%;
+}
+
+.btn-submit{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    width: 15.1rem;
+    height: 4.5rem;
+
+    margin-top: 2.4rem;
+
+    border: none;
+    border-radius: 1.6rem;
+
+    background-color: var(--DarkPurple-font);
+    color: #fff;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-submit:hover{
+    background-color: var(--purple-font);
+    box-shadow: 0 0 4px 4px var(--purple-font);
+    transform: scale(1.05);
+}
+
+section .purple-stars{
+    width: 64.4rem;
+    height: 61.2rem;
+
+    position: absolute;
+    right: 0%;
+}
+
+/* FOOTER */
+footer .footer-bar{
+    height: 7.8rem;
+
+    background-color: var(--DarkPurple-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-bar p{
+    font-size: 1.9rem;
+    color: #fff;
+}
